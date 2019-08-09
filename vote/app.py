@@ -8,7 +8,7 @@ import json
 option_a = os.getenv('OPTION_A', "Sublime")
 option_b = os.getenv('OPTION_B', "Atom")
 hostname = socket.gethostname()
-version = 'v11'
+version = 'v-adb-11'
 
 app = Flask(__name__)
 

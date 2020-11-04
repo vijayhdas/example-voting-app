@@ -13,20 +13,4 @@ services:
 
   redis: 
     image: redis:alpine
-
-  worker: 
-    image: schoolofdevops/worker
-    depends_on:
-      - redis
-
-  db: 
-    image: postgres:9.4
-    volumes: 
-      - db-data:/var/lib/postgresql/data
-
-  result:  
-    image: initcron/result:latest
-    ports: 
-      - 5001:80
-
       
